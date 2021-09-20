@@ -1,11 +1,12 @@
 function C2(props) {
-  const { sendInfo } = props;
   function randomNum() {
     return Math.floor(Math.random() * (11 - 1)) + 1;
   }
-  props.callback(randomNum(sendInfo));
 
-  return <p>{randomNum(sendInfo)}</p>;
+  const result = randomNum();
+  props.callback(result);
+
+  return <p>{result}</p>;
 }
 
 export default C2;

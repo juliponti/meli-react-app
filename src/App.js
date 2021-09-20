@@ -8,6 +8,7 @@ function App() {
     showInfo === false && setShowInfo(true);
     showInfo === true && setShowInfo(false);
   }
+
   function handleCallback(data) {
     console.log(data);
   }
@@ -17,9 +18,9 @@ function App() {
       {showInfo === true && (
         <>
           <C1 title="Primer número:" />
-          <C2 sendInfo="" callback={handleCallback} />
+          <C2 callback={handleCallback} />
           <C1 title="Segundo número:" />
-          <C2 sendInfo="" callback={handleCallback} />
+          <C2 callback={handleCallback} />
         </>
       )}
     </div>
