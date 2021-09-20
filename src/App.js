@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Title from "./components/Title";
 import C1 from "./components/C1";
 import C2 from "./components/C2";
 
@@ -15,14 +16,9 @@ function App() {
   return (
     <div>
       <button onClick={handleClick}>Show Info</button>
-      {showInfo === true && (
-        <>
-          <C1 title="Primer número:" />
-          <C2 callback={handleCallback} />
-          <C1 title="Segundo número:" />
-          <C2 callback={handleCallback} />
-        </>
-      )}
+      {showInfo === true && <Title title="Este es el título" />}
+      <C1 sendInfo="Primer número: " firstNum="" callback={handleCallback} />
+      <C2 sendInfo="Segundo número: " secondNum="" />
     </div>
   );
 }
