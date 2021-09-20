@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import C1 from "./components/C1";
+import C2 from "./components/C2";
 
 function App() {
+  const [showInfo, setShowInfo] = useState(false);
+  function handleClick() {
+    showInfo === false && setShowInfo(true);
+    showInfo === true && setShowInfo(false);
+  }
+  function handleCallback(data) {
+    console.log(data);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button onClick={handleClick}>Show Info</button>
+      {showInfo === true && (
+        <>
+          <C1 title="Primer número:" />
+          <C2 sendInfo="" callback={handleCallback} />
+          <C1 title="Segundo número:" />
+          <C2 sendInfo="" callback={handleCallback} />
+        </>
+      )}
     </div>
   );
 }
