@@ -13,6 +13,8 @@ function App() {
       setTitle("El primer número es mayor");
     } else if (number2 > number1) {
       setTitle("El segundo número es mayor");
+    } else if (number1 === number2) {
+      setTitle("Ambos números son iguales");
     }
   }
 
@@ -24,10 +26,15 @@ function App() {
     }
   }
 
+  function handleReset() {
+    setNumber1(false);
+    setNumber2(false);
+  }
+
   return (
     <div>
-      <button onClick={handleClick}>Title</button>
-      <h1>{!title ? "Generar los números " : title}</h1>
+      <h1>{!title ? "Generar números " : title}</h1>
+      <hr />
       <C1
         sendInfo="Primer número: "
         callback={handleCallback}
@@ -38,6 +45,9 @@ function App() {
         callback={handleCallback}
         number={number2}
       />
+      <br />
+      <button onClick={handleClick}>Comparar números</button>
+      <button onClick={handleReset}> Reset</button>
     </div>
   );
 }
