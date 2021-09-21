@@ -1,14 +1,14 @@
 function C2(props) {
-  let { sendInfo, secondNum } = props;
+  let { sendInfo, callback, number } = props;
   function randomNum() {
-    return Math.floor(Math.random() * (11 - 1)) + 1;
+    callback(Math.floor(Math.random() * (11 - 1)) + 1, "dos");
   }
 
-  secondNum = randomNum();
   return (
     <div>
-      <span>{sendInfo}</span>
-      <span>{secondNum}</span>
+      <h2>{sendInfo}</h2>
+      <button onClick={randomNum}>Generar número</button>
+      {number && <span> {number}</span>}
     </div>
   );
 }
