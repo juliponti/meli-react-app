@@ -1,7 +1,9 @@
+import { randomNumOneToTen } from "../../utils";
+
 function C1(props) {
   const { sendInfo, callback, number } = props;
   function randomNum() {
-    callback(Math.floor(Math.random() * (11 - 1)) + 1);
+    callback(randomNumOneToTen());
   }
 
   return (

@@ -29,6 +29,7 @@ function App() {
   function handleReset() {
     setNumber1(false);
     setNumber2(false);
+    setTitle("");
   }
 
   return (
