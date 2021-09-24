@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Harabara+Mais+Demo");
 .navbar {
   width: 100%;
   height: 100px;
@@ -22,10 +23,42 @@
 .right__container input {
   border: solid 1px #ddd;
   height: 20px;
+  box-shadow: 1px 2px 4px #d6d6d6;
+}
+
+.right__container input:focus {
+  outline: solid 1px #ddd;
 }
 
 .right__container button {
   width: 70px;
-  height: 23px;
-  margin: 0 5px;
+  height: 24px;
+  background-color: rgb(247, 242, 242);
+  border: solid 1px #ddd;
+  color: rgb(136, 136, 136);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.right__container button:hover {
+  background-color: rgb(233, 232, 232);
+  color: rgb(0, 0, 0);
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h1 {
+  margin: 10px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+.main img {
+  width: 40%;
 }
