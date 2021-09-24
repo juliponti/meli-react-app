@@ -16,7 +16,7 @@ function Carrousel() {
           <button>Buscar</button>
         </div>
       </nav>
-      <main>
+      <main className="main">
         <h1>Busque su producto</h1>
         <img src={img} />
       </main>
