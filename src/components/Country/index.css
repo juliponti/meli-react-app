@@ -1,0 +1,27 @@
+.country {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: fit-content;
+  height: 25px;
+  margin-top: 3px;
+  background-color: #ffffffa2;
+  padding: 5px 13px;
+}
+
+.country:hover {
+  background-color: #ffffff5e;
+}
+
+.country img {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+.country a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  color: #0000ee;
+}
