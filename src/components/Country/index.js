@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 import "./index.css";
 
 function Country(props) {
-  const { title, img, code } = props;
+  const { country, flag, code } = props.value;
 
   return (
     <li className="country">
-      <img src={img} alt="" />
+      <img src={flag} alt="" />
       <Link to={`carrousel/${code}`} alt="">
-        {title}
+        {country}
       </Link>
     </li>
   );
