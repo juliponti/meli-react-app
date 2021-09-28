@@ -1,20 +1,10 @@
-import { useEffect } from "react";
+//import { useEffect } from "react";
 import Country from "../../components/Country";
 import Logo from "../../assets/logo.png";
 import "./App.css";
-import arrCountries from "../../countries.js";
+import arrCountries from "../../data/countries";
 
 function App() {
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  async function fetchData(site, product) {
-    const getData = await fetch(`https://api.mercadolibre.com/sites/`);
-    const dataToJson = await getData.json();
-    return console.log(dataToJson);
-  }
-
   return (
     <section className="home">
       <div className="logo">
@@ -22,9 +12,9 @@ function App() {
       </div>
       <div className="list__container">
         <ul className="countries__list">
-          {arrCountries.map((country, code, flag) => (
+          {arrCountries.map((value, key) => (
             <li>
-              <Country title={country} img={flag} code={code} />
+              <Country value={value} key={key} />
             </li>
           ))}
         </ul>
