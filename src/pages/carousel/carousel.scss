@@ -1,0 +1,82 @@
+@import "../../scss/configurations";
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: $primary-color;
+  @include FlexBox(row, space-between, center);
+
+  & img {
+    width: 20%;
+    padding-left: 10px;
+  }
+}
+
+.form__container {
+  padding: 0 10px;
+
+  & input {
+    border: solid 1px $border-color;
+    height: 20px;
+  }
+
+  & input:focus {
+    outline: solid 1px $border-color;
+  }
+
+  & button {
+    width: 70px;
+    height: 24px;
+    background-color: $button-color;
+    border: solid 1px rgb(44 50 121);
+    color: rgb(210 205 205);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+}
+
+.empty {
+  width: 100%;
+  @include FlexBox(column);
+}
+
+.main_h1 {
+  @include FlexBox;
+}
+
+.main_img {
+  width: 40%;
+}
+
+.main {
+  @include FlexBox(column, center, flex-start);
+  width: 100%;
+  height: calc(100vh - 100px);
+  min-height: 700px;
+  background-color: $bg-color;
+}
+
+.product__list {
+  width: 100%;
+  height: 70%;
+  @include FlexBox;
+}
+
+.notification__container {
+  width: 100%;
+  height: 18%;
+  position: relative;
+  left: -127px;
+  & img {
+    width: 50%;
+  }
+}
+
+.swiper-slide {
+  background-color: #ebebeb !important;
+}

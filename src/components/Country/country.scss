@@ -1,0 +1,33 @@
+@import "../../scss/configurations";
+
+.country {
+  @include FlexBox(row, flex-start);
+
+  width: fit-content;
+  height: 25px;
+  margin-top: 3px;
+  background-color: $bg-country-color;
+  padding: 5px 13px;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  & img {
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+  }
+
+  & a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    color: #0000ee;
+  }
+}
+
+/*@media screen and (max-width: 580px) {
+  .country {
+  }
+}*/

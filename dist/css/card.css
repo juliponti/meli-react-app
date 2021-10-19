@@ -1,0 +1,72 @@
+.card {
+  border: solid 1px #ddd;
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.card a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.img__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  width: 100%;
+}
+
+.img {
+  width: 35%;
+}
+
+.vector {
+  width: 100%;
+  border: solid 0.1px #f1efef;
+}
+
+.text__container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.text__container h1 {
+  width: 100%;
+  font-size: 1rem;
+  color: #444444;
+}
+
+.text__container p {
+  color: #a7a4a4;
+}
+/*# sourceMappingURL=card.css.map */

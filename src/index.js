@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import App from "./pages/App";
-import Carrousel from "./pages/carrousel";
+import Carousel from "./pages/carousel";
 
 ReactDOM.render(
   <Router>
     <Route exact path="/" component={App} />
-    <Route exact path="/carrousel/:site" component={Carrousel} />
+    <Route exact path="/carousel/:site" component={Carrousel} />
   </Router>,
   document.getElementById("root")
 );

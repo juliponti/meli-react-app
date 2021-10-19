@@ -1,0 +1,37 @@
+.country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 25px;
+  margin-top: 3px;
+  background-color: #ffffffa2;
+  padding: 5px 13px;
+}
+
+.country:hover {
+  background-color: #ffffff5e;
+}
+
+.country img {
+  width: 25px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+.country a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  color: #0000ee;
+}
+/*# sourceMappingURL=index.css.map */

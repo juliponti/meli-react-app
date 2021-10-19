@@ -1,0 +1,73 @@
+@import "../../scss/configurations";
+
+.card {
+  margin: 50px auto;
+  border: solid 2px $border-color;
+  background-color: $white;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+
+  width: 251px;
+  transition: height 0.1s ease-out;
+
+  & a {
+    width: 100%;
+    @include FlexBox(column);
+    text-decoration: none;
+  }
+
+  &:hover {
+    box-shadow: 0 7px 11px 0 rgb(0 0 0 / 10%), 0 2px 4px 0 rgb(0 0 0 / 10%);
+    max-height: fit-content;
+    min-height: 330px;
+  }
+}
+
+.img__container {
+  @include FlexBox;
+
+  height: 330px;
+  width: 100%;
+}
+
+.img {
+  margin: 10px auto;
+}
+
+.vector {
+  width: 100%;
+  border: solid 0.1px #f1efef;
+}
+
+.text__container {
+  width: 90%;
+  min-height: 75px;
+  @include FlexBox(column, flex-start);
+
+  & h1 {
+    margin: 4px 0;
+    width: 100%;
+    font-size: 1.5rem;
+    color: $primary-font-color;
+    text-align: left;
+  }
+
+  & p {
+    width: 100%;
+    margin: 2px 0 5px;
+    color: $black;
+    text-align: left;
+  }
+
+  & h2 {
+    margin: 5px;
+
+    color: $bf-price-color;
+    font-size: 0.875rem;
+    text-decoration-line: line-through;
+  }
+}
+
+.prices__container {
+  @include FlexBox(column-reverse, center, flex-start);
+  width: 100%;
+}

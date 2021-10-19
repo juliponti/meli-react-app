@@ -1,0 +1,42 @@
+@import "../../scss/configurations";
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  @include FlexBox;
+  background-color: $primary-color;
+}
+
+.logo__container {
+  @include FlexBox;
+  width: 50%;
+  margin: 0;
+
+  .logo {
+    align-items: center;
+    width: 50%;
+  }
+}
+
+.list__container {
+  width: 30%;
+}
+.countries__list {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 580px) {
+  .home {
+    @include FlexBox(column);
+  }
+
+  .list__container {
+    width: 40%;
+    margin: 20px auto;
+  }
+
+  .countries__list {
+    width: 188px;
+    @include FlexBox(column);
+  }
+}
