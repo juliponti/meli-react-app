@@ -2,14 +2,20 @@
 
 .navbar {
   width: 100%;
-  height: 100px;
+  height: 120px;
   background-color: $primary-color;
   @include FlexBox(row, space-between, center);
 
-  & img {
+  .logo {
+    max-width: 360px;
+    min-width: 200px;
     width: 20%;
     padding-left: 10px;
   }
+}
+
+.logo-responsive {
+  display: none;
 }
 
 .form__container {
@@ -41,7 +47,10 @@
 }
 
 .empty {
+  min-height: 100vh;
+
   width: 100%;
+  background-color: $bg-color;
   @include FlexBox(column);
 }
 
@@ -51,17 +60,20 @@
 
 .main_img {
   width: 40%;
+  min-width: 340px;
+  max-width: 800px;
 }
 
 .main {
-  @include FlexBox(column, center, flex-start);
+  @include FlexBox(column, center, center);
   width: 100%;
-  height: calc(100vh - 100px);
-  min-height: 700px;
+
+  min-height: 100vh;
   background-color: $bg-color;
 }
 
 .product__list {
+  max-width: 1320px;
   width: 100%;
   height: 70%;
   @include FlexBox;
@@ -70,13 +82,34 @@
 .notification__container {
   width: 100%;
   height: 18%;
-  position: relative;
-  left: -127px;
+  max-width: 1320px;
   & img {
+    min-width: 480px;
     width: 50%;
+    margin: 62px 0 0 14px;
   }
 }
 
 .swiper-slide {
   background-color: #ebebeb !important;
 }
+
+@media screen and (max-width: 490px) {
+  .logo {
+    display: none;
+  }
+
+  .logo-responsive {
+    display: block;
+
+    width: 20%;
+    padding-left: 10px;
+  }
+
+  .notification__container {
+    display: none;
+    img {
+      display: none;
+    }
+  }
+} ;

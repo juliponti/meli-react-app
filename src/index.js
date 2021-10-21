@@ -10,7 +10,7 @@ import Carousel from "./pages/carousel";
 ReactDOM.render(
   <Router>
     <Route exact path="/" component={App} />
-    <Route exact path="/carousel/:site" component={Carrousel} />
+    <Route exact path="/carousel/:site" component={Carousel} />
   </Router>,
   document.getElementById("root")
 );

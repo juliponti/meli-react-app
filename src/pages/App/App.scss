@@ -25,18 +25,35 @@
   list-style-type: none;
 }
 
+@media screen and (max-width: 1248px) {
+  .country a {
+    font-size: 2vw;
+  }
+}
+
 @media screen and (max-width: 580px) {
   .home {
     @include FlexBox(column);
   }
 
   .list__container {
-    width: 40%;
+    width: 210px;
+    margin: 0 auto;
+  }
+
+  .logo__container {
     margin: 20px auto;
+    max-width: 405px;
+  }
+
+  .logo {
+    width: 135px;
+    max-width: 405px;
   }
 
   .countries__list {
+    padding: 10px;
     width: 188px;
-    @include FlexBox(column);
+    @include FlexBox(column, center, flex-start);
   }
 }

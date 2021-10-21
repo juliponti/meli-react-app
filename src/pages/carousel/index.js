@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import Logo from "../../assets/small-logo.png";
+import LogoResponsive from "../../assets/responsive-logo.png";
 import img from "../../assets/cat.png";
 import "./carousel.scss";
 import Swiper from "../../components/Swiper";
@@ -25,7 +26,12 @@ function Carousel() {
   return (
     <>
       <nav className="navbar">
-        <img src={Logo} alt="mercado libre logo" />
+        <img src={Logo} alt="mercado libre logo" className="logo" />
+        <img
+          src={LogoResponsive}
+          alt="mercado libre logo"
+          className="logo-responsive"
+        />
         <form className="form__container">
           <input
             value={inputValue}
@@ -37,7 +43,7 @@ function Carousel() {
         </form>
       </nav>
       <main className="main">
-        {!searchResults.length && (
+        {!searchResults.length ? (
           <div className="empty">
             <h1 className="main_h1">Busque su producto</h1>
             <img
@@ -46,8 +52,7 @@ function Carousel() {
               alt="animated cat with yellow bills"
             />
           </div>
-        )}
-        {searchResults.length && (
+        ) : (
           <>
             <div className="notification__container">
               <img src={Notification} />
