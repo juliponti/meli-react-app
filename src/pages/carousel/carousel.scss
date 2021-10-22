@@ -112,4 +112,14 @@
       display: none;
     }
   }
-} ;
+}
+
+@media screen and (max-width: 345px) {
+  .form__container {
+    width: 190px;
+
+    & input {
+      width: 60%;
+    }
+  }
+}
