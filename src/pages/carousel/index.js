@@ -24,7 +24,7 @@ function Carousel() {
   }
 
   return (
-    <>
+    <main className="main">
       <nav className="navbar">
         <img src={Logo} alt="mercado libre logo" className="logo" />
         <img
@@ -42,28 +42,27 @@ function Carousel() {
           <button onClick={fetchData}>Buscar</button>
         </form>
       </nav>
-      <main className="main">
-        {!searchResults.length ? (
-          <div className="empty">
-            <h1 className="main_h1">Busque su producto</h1>
-            <img
-              className="main_img"
-              src={img}
-              alt="animated cat with yellow bills"
-            />
+
+      {!searchResults.length ? (
+        <div className="empty">
+          <h1 className="main_h1">Busque su producto</h1>
+          <img
+            className="main_img"
+            src={img}
+            alt="animated cat with yellow bills"
+          />
+        </div>
+      ) : (
+        <>
+          <div className="notification__container">
+            <img src={Notification} />
           </div>
-        ) : (
-          <>
-            <div className="notification__container">
-              <img src={Notification} />
-            </div>
-            <div className="product__list">
-              <Swiper results={searchResults} />
-            </div>
-          </>
-        )}
-      </main>
-    </>
+          <div className="product__list">
+            <Swiper results={searchResults} />
+          </div>
+        </>
+      )}
+    </main>
   );
 }
 export default Carousel;

@@ -1,5 +1,23 @@
 @import "../../scss/configurations";
 
+.main {
+  @include FlexBox(column, flex-start, center);
+  width: 100%;
+
+  min-height: 100vh;
+  background-color: $bg-color;
+
+  .main_h1 {
+    @include FlexBox;
+  }
+
+  .main_img {
+    width: 40%;
+    min-width: 340px;
+    max-width: 800px;
+  }
+}
+
 .navbar {
   width: 100%;
   height: 120px;
@@ -47,29 +65,9 @@
 }
 
 .empty {
-  min-height: 100vh;
-
   width: 100%;
   background-color: $bg-color;
   @include FlexBox(column);
-}
-
-.main_h1 {
-  @include FlexBox;
-}
-
-.main_img {
-  width: 40%;
-  min-width: 340px;
-  max-width: 800px;
-}
-
-.main {
-  @include FlexBox(column, center, center);
-  width: 100%;
-
-  min-height: 100vh;
-  background-color: $bg-color;
 }
 
 .product__list {
