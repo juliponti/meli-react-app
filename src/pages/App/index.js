@@ -13,9 +13,7 @@ function App() {
       <div className="list__container">
         <ul className="countries__list">
           {arrCountries.map((value, key) => (
-            <li>
-              <Country value={value} key={key} />
-            </li>
+            <Country value={value} key={key} />
           ))}
         </ul>
       </div>

@@ -59,16 +59,24 @@
   }
 
   & h2 {
-    margin: 5px;
-    color: $bf-price-color;
     font-size: 0.875rem;
-    font-weight: 300;
+    font-weight: 400;
+  }
+
+  .original_price {
+    color: $b4-price-color;
     text-decoration-line: line-through;
+    margin: 5px;
+  }
+
+  .free_shipping {
+    color: $free-shipping-color;
+    margin: 0;
   }
 }
 
 .prices__container {
-  @include FlexBox(column-reverse, center, flex-start);
+  @include FlexBox(column, center, flex-start);
   width: 100%;
 }
 

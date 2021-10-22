@@ -23,8 +23,13 @@ function Card(props) {
         <div className="vector"></div>
         <div className="text__container">
           <div className="prices__container">
+            {isOpen && item.original_price && (
+              <h2 className="original_price">${item.original_price}</h2>
+            )}
             <h1>${item.price}</h1>
-            {isOpen && item.original_price && <h2>${item.original_price}</h2>}
+            {item.shipping.free_shipping && (
+              <h2 className="free_shipping"> Envío Gratis </h2>
+            )}
           </div>
           {isOpen && <p>{item.title}</p>}
         </div>
