@@ -1,16 +1,10 @@
-import { useState } from "react";
 import "./card.scss";
 
 function Card(props) {
   const { item } = props;
 
-  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div
-      className="card"
-      onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)}
-    >
+    <div className="card">
       <a
         href={item.permalink}
         alt={item.title}
@@ -23,7 +17,7 @@ function Card(props) {
         <div className="vector"></div>
         <div className="text__container">
           <div className="prices__container">
-            {isOpen && item.original_price && (
+            {item.original_price && (
               <h2 className="original_price">${item.original_price}</h2>
             )}
             <h1>${item.price}</h1>
@@ -31,7 +25,7 @@ function Card(props) {
               <h2 className="free_shipping"> Envío Gratis </h2>
             )}
           </div>
-          {isOpen && <p>{item.title}</p>}
+          <p className="title">{item.title}</p>
         </div>
       </a>
     </div>
