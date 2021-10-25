@@ -1,15 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
 import "swiper/swiper-bundle.css";
 import "swiper/components/navigation";
 import "swiper/components/pagination";
 import "./swiper.scss";
-
-import SwiperCore, { Navigation } from "swiper";
-
 import Card from "../Card";
 
 SwiperCore.use([Navigation]);
-export default ({ results }) => {
+
+const Results = ({ results }) => {
   return (
     <Swiper
       slidesPerView={5}
@@ -44,10 +43,12 @@ export default ({ results }) => {
       }}
     >
       {results.map((item) => (
-        <SwiperSlide>
+        <SwiperSlide key={item.id}>
           <Card item={item} />
         </SwiperSlide>
       ))}
     </Swiper>
   );
 };
+
+export default Results;

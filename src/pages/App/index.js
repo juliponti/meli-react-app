@@ -1,4 +1,3 @@
-//import { useEffect } from "react";
 import Country from "../../components/Country";
 import Logo from "../../assets/logo.png";
 import "./App.scss";

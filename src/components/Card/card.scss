@@ -1,14 +1,14 @@
 @import "../../scss/configurations";
 
 .card {
+  width: 251px;
+  min-height: 402px;
   margin: 50px auto;
   border: solid 2px $border-color;
   background-color: $white;
   box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
-  width: 251px;
-  min-height: 402px;
 
-  & a {
+  a {
     width: 100%;
     @include FlexBox(column);
     text-decoration: none;
@@ -28,75 +28,92 @@
       }
     }
   }
+}
+.img__container {
+  @include FlexBox;
 
-  .img__container {
-    @include FlexBox;
+  height: 330px;
+  width: 100%;
 
-    height: 330px;
+  .img {
+    margin: 10px auto;
+  }
+}
+
+.vector {
+  width: 100%;
+  border: solid 0.1px #f1efef;
+}
+
+.text__container {
+  width: 90%;
+  @include FlexBox(column, flex-start);
+  transition: max-height 0.1s ease-out;
+
+  .prices__container {
+    @include FlexBox(column, center, flex-start);
     width: 100%;
 
-    .img {
-      margin: 10px auto;
-    }
-  }
-
-  .vector {
-    width: 100%;
-    border: solid 0.1px #f1efef;
-  }
-
-  .text__container {
-    transition: max-height 0.1s ease-out;
-
-    width: 90%;
-    @include FlexBox(column, flex-start);
-
-    .prices__container {
-      @include FlexBox(column, center, flex-start);
+    h1 {
+      margin: 4px 0;
       width: 100%;
-
-      h1 {
-        margin: 4px 0;
-        width: 100%;
-        font-size: 1.5rem;
-        color: $primary-font-color;
-        text-align: left;
-      }
-
-      h2 {
-        font-size: 0.875rem;
-        font-weight: 400;
-      }
-    }
-
-    .title {
-      width: 100%;
-      margin: 2px 0 5px;
-      color: $black;
+      font-size: 1.5rem;
+      color: $primary-font-color;
       text-align: left;
     }
 
-    .title,
-    .original_price {
-      transition: max-height 0.1s ease-out;
-      max-height: 0;
-      overflow: hidden;
+    h2 {
+      font-size: 0.875rem;
+      font-weight: 400;
     }
+  }
 
-    .original_price {
-      display: none;
-      color: $b4-price-color;
-      text-decoration-line: line-through;
-      margin: 5px;
-    }
+  .title {
+    width: 100%;
+    margin: 2px 0 5px;
+    color: $black;
+    text-align: left;
+  }
 
-    .free_shipping {
-      color: $free-shipping-color;
-      margin: 0;
-    }
+  .title,
+  .original_price {
+    transition: max-height 0.1s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .original_price {
+    display: none;
+    color: $b4-price-color;
+    text-decoration-line: line-through;
+    margin: 5px;
+  }
+
+  .free_shipping {
+    color: $free-shipping-color;
+    margin: 0;
   }
 }
 
 .swiper-container {
   height: 600px;
+}
+
+.touch-card {
+  @extend .card;
+  .card {
+    a {
+      .text__container {
+        .title,
+        .original_price {
+          display: block;
+          height: 300px;
+          max-height: 300px;
+        }
+      }
+    }
+    &:hover {
+      display: none;
+    }
+  }
 }

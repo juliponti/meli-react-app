@@ -17,7 +17,7 @@ import sv from "./flags/sv.svg";
 import uy from "./flags/uy.svg";
 import ve from "./flags/ve.svg";
 
-export default {
+const Countries = {
   Argentina: ar,
   Bolivia: bo,
   Brasil: br,
@@ -37,3 +37,5 @@ export default {
   Uruguay: uy,
   Venezuela: ve,
 };
+
+export default Countries;

@@ -8,9 +8,9 @@
 }
 
 .logo__container {
-  @include FlexBox;
   width: 50%;
   margin: 0;
+  @include FlexBox;
 
   .logo {
     align-items: center;
@@ -20,9 +20,9 @@
 
 .list__container {
   width: 30%;
-}
-.countries__list {
-  list-style-type: none;
+  .countries__list {
+    list-style-type: none;
+  }
 }
 
 @media screen and (max-width: 1248px) {
@@ -36,24 +36,24 @@
     @include FlexBox(column);
   }
 
-  .list__container {
-    width: 210px;
-    margin: 0 auto;
-  }
-
   .logo__container {
     margin: 20px auto;
     max-width: 405px;
+
+    .logo {
+      width: 135px;
+      max-width: 405px;
+    }
   }
 
-  .logo {
-    width: 135px;
-    max-width: 405px;
-  }
+  .list__container {
+    width: 210px;
+    margin: 0 auto;
 
-  .countries__list {
-    padding: 10px;
-    width: 188px;
-    @include FlexBox(column, center, flex-start);
+    .countries__list {
+      padding: 10px;
+      width: 188px;
+      @include FlexBox(column, center, flex-start);
+    }
   }
 }

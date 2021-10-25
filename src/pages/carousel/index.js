@@ -3,9 +3,9 @@ import { useState } from "react";
 import Logo from "../../assets/small-logo.png";
 import LogoResponsive from "../../assets/responsive-logo.png";
 import img from "../../assets/cat.png";
-import "./carousel.scss";
-import Swiper from "../../components/Swiper";
 import Notification from "../../assets/mla-menu-desktop-notification-picture-86b2b844-4c2d-4b7c-8649-4fef867e0b9d.png";
+import Swiper from "../../components/Swiper";
+import "./carousel.scss";
 
 function Carousel() {
   const { site } = useParams();
@@ -19,7 +19,6 @@ function Carousel() {
     );
     const dataToJson = await getData.json();
     setSearchResults(dataToJson.results);
-    console.log(dataToJson);
     setInputValue("");
   }
 
@@ -55,7 +54,7 @@ function Carousel() {
       ) : (
         <>
           <div className="notification__container">
-            <img src={Notification} />
+            <img src={Notification} alt="Comprá en 12 cuotas sin tarjeta" />
           </div>
           <div className="product__list">
             <Swiper results={searchResults} />
