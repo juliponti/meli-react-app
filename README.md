@@ -1,7 +1,6 @@
 # Getting Started with Create React App [work in progress]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Check [demo](https://juliponti.github.io/meli-react-app/)
-
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 ## Available Scripts
 
 In the project directory, you can run:
