@@ -3,26 +3,19 @@ import "./card.scss";
 function Card(props) {
   const { item } = props;
 
-  function isTouchDevice() {
-    return (
-      "ontouchstart" in window ||
-      navigator.maxTouchPoints > 0 ||
-      navigator.msMaxTouchPoints > 0
-    );
-  }
-
   return (
-    <div className={isTouchDevice() ? "touch-card" : "card"}>
-      <picture className="img__container">
-        <img className="img" src={item.thumbnail} alt={item.title} />
-      </picture>
-      <div className="vector"></div>
+    <div className="card">
       <a
         href={item.permalink}
         alt={item.title}
         target="_blank"
         rel="noreferrer"
       >
+        <picture className="img__container">
+          <img className="img" src={item.thumbnail} alt={item.title} />
+        </picture>
+        <div className="vector"></div>
+
         <div className="text__container">
           <div className="prices__container">
             {item.original_price && (
