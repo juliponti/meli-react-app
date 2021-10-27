@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/meli-react-app/static/css/main.932a61eb.chunk.css",
-    "main.js": "/meli-react-app/static/js/main.441c5ead.chunk.js",
-    "main.js.map": "/meli-react-app/static/js/main.441c5ead.chunk.js.map",
+    "main.css": "/meli-react-app/static/css/main.7372f217.chunk.css",
+    "main.js": "/meli-react-app/static/js/main.e2bf5c5b.chunk.js",
+    "main.js.map": "/meli-react-app/static/js/main.e2bf5c5b.chunk.js.map",
     "runtime-main.js": "/meli-react-app/static/js/runtime-main.659aa982.js",
     "runtime-main.js.map": "/meli-react-app/static/js/runtime-main.659aa982.js.map",
     "static/css/2.b67bb947.chunk.css": "/meli-react-app/static/css/2.b67bb947.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.78ed0eb4.chunk.js.map": "/meli-react-app/static/js/3.78ed0eb4.chunk.js.map",
     "index.html": "/meli-react-app/index.html",
     "static/css/2.b67bb947.chunk.css.map": "/meli-react-app/static/css/2.b67bb947.chunk.css.map",
-    "static/css/main.932a61eb.chunk.css.map": "/meli-react-app/static/css/main.932a61eb.chunk.css.map",
+    "static/css/main.7372f217.chunk.css.map": "/meli-react-app/static/css/main.7372f217.chunk.css.map",
     "static/js/2.33fc6b33.chunk.js.LICENSE.txt": "/meli-react-app/static/js/2.33fc6b33.chunk.js.LICENSE.txt",
     "static/media/ar.5a7c09af.svg": "/meli-react-app/static/media/ar.5a7c09af.svg",
     "static/media/bo.4ec73d7d.svg": "/meli-react-app/static/media/bo.4ec73d7d.svg",
@@ -39,7 +39,7 @@
     "static/js/runtime-main.659aa982.js",
     "static/css/2.b67bb947.chunk.css",
     "static/js/2.33fc6b33.chunk.js",
-    "static/css/main.932a61eb.chunk.css",
-    "static/js/main.441c5ead.chunk.js"
+    "static/css/main.7372f217.chunk.css",
+    "static/js/main.e2bf5c5b.chunk.js"
   ]
 }
