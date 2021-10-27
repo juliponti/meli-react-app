@@ -25,7 +25,7 @@ function Carousel() {
   return (
     <main className="main">
       <nav className="navbar">
-        <img src={Logo} alt="mercado libre logo" className="logo" />
+        <img src={Logo} alt="mercado libre logo" className="nav-logo" />
         <img
           src={LogoResponsive}
           alt="mercado libre logo"

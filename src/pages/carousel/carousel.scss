@@ -24,7 +24,7 @@
   background-color: $primary-color;
   @include FlexBox(row, space-between, center);
 
-  .logo {
+  .nav-logo {
     max-width: 360px;
     min-width: 200px;
     width: 20%;
@@ -94,7 +94,7 @@
 }
 
 @media screen and (max-width: 490px) {
-  .logo {
+  .nav-logo {
     display: none;
   }
 
