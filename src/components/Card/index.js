@@ -13,16 +13,16 @@ function Card(props) {
 
   return (
     <div className={isTouchDevice() ? "touch-card" : "card"}>
+      <picture className="img__container">
+        <img className="img" src={item.thumbnail} alt={item.title} />
+      </picture>
+      <div className="vector"></div>
       <a
         href={item.permalink}
         alt={item.title}
         target="_blank"
         rel="noreferrer"
       >
-        <picture className="img__container">
-          <img className="img" src={item.thumbnail} alt={item.title} />
-        </picture>
-        <div className="vector"></div>
         <div className="text__container">
           <div className="prices__container">
             {item.original_price && (
