@@ -9,7 +9,7 @@ import Carousel from "./pages/carousel";
 
 ReactDOM.render(
   <Router>
-    <Route exact path="/" component={App} />
+    <Route exact path="/meli-react-app" component={App} />
     <Route exact path="/carousel/:site" component={Carousel} />
   </Router>,
   document.getElementById("root")
