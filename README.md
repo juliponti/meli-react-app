@@ -7,25 +7,25 @@ This is my final project of the React course in [CourseIt](https://www.courseit.
 
 Exercise:
 
-Queremos crear una aplicacion que replique las siguientes fotos:
+Create an app that replicates the following pictures:
 
 ![Image](https://courseit-statics.nyc3.digitaloceanspaces.com/contenido/online/react/meli1.png)
 
 ![Image](https://courseit-statics.nyc3.digitaloceanspaces.com/contenido/online/react/meli2.png)
 
-**Cosas a tener en cuenta**
+**Keep into account**
 
-- En base a la opcion seleccionada en la primer imagen, la segunda imagen tiene que traer los resultados filtrados por esa nacionalidad
-- Ambas pantallas tienen que estar en una misma aplicacion pero con rutas distintas
+- Based on the option selected in the first page, the second screen has to bring the results filtered by that nationality 
+- Both screens have to be in the same app but in differents routes
 
 
-**Rutas**
+**Routes**
 
-Primera imagen tiene que estar en "/"
+The first screen has to be the "/" route
 
-Segunda imagen tiene que estar en "/carousel/:site"
+The second screen has to be "/carousel/:site"
 
-**Codigos**
+**Codes**
 
 - Argentina -> MLA
 
@@ -39,7 +39,7 @@ Segunda imagen tiene que estar en "/carousel/:site"
 
 `https://api.mercadolibre.com/sites/SITE/search?q=BUSQUEDA`
 
-**Recursos**
+**Resources**
 
 https://http2.mlstatic.com/resources/deals/exhibitors_resources/mla-menu-desktop-notification-picture-86b2b844-4c2d-4b7c-8649-4fef867e0b9d.png
 
